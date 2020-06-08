@@ -109,3 +109,6 @@ The FBControllerNavigator is based on a protocol named FBNavigator (the most imp
 
 
 Let me know your thoughts! :) 
+
+
+And a **BIG THANKS** to John Sundell, whose article https://www.swiftbysundell.com/articles/navigation-in-swift/ inspired me to build this solution for my own. 
