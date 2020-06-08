@@ -92,10 +92,20 @@ enum MainDestination: FBControllerDestination {
  }
 ```
 
-That's cool, isn't it?
+### Last! But no least...
+As you can see, you can implement an enum to describe some routes to your navigation. But there's no reason for you to implement only one... you can split all your navigation in the way that best suits your need. 
+
+As you can pass a generic FBControllerDestination here, you can change the possible routes for each instance of FBControllerNavigator. No subclassing needed.  
+```swift
+let navigator1 = FBControllerNavigator<SomeDestination>(nc: navigationController)
+let navigator2 = FBControllerNavigator<AnotherDestination>(nc: navigationController)
+```
+
+Now that's cool, isn't it?
 
 ### Yeah! I like it. But if I need to navigate between another endpoints rather than ViewControllers?
 
 The FBControllerNavigator is based on a protocol named FBNavigator (the most important part), so it means that you can implement it with another objects to construct your own navigation to fit your needs. I've implemented FBControllerNavigator as an example of the most common navigation, that is, between viewControllers. :) 
 
 
+Let me know your thoughts! :) 
