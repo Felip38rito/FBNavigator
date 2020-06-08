@@ -24,10 +24,11 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+#  spec.description  = <<-DESC
+#                   DESC
+  spec.description = "A SOLID (at least wannabe) and simple implementation of navigation that you can use with enumeration of viewcontrollers to make the routes"
 
-  spec.homepage     = "http://EXAMPLE/FBNavigator"
+  spec.homepage     = "https://github.com/Felip38rito/FBNavigator"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Felip38rito/FBNavigator", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Felip38rito/FBNavigator.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
