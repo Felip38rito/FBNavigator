@@ -68,7 +68,7 @@ open class FBControllerNavigator<D: FBControllerDestination>: FBNavigator {
     public typealias Destination = D
     
     /// The UIKit navigationController
-    private weak var navigationController: UINavigationController?
+    public weak var navigationController: UINavigationController?
     
     /// Initialize the navigator for UIViewControllers
     /// - Parameter nc: The navigation controller responsible for the controller basic navigation
@@ -90,7 +90,7 @@ open class FBControllerNavigator<D: FBControllerDestination>: FBNavigator {
     navigator.navigate(to: .main)
     ~~~
     */
-    public func navigate(to: D) {
+    open func navigate(to: D) {
         navigationController?.pushViewController(to.controller(), animated: true)
     }
 }
