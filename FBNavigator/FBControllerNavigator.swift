@@ -90,7 +90,7 @@ open class FBControllerNavigator<D: FBControllerDestination>: FBNavigator {
     navigator.navigate(to: .main)
     ~~~
     */
-    open func navigate(to: D) {
-        navigationController?.pushViewController(to.controller(), animated: true)
+    open func navigate(to: D, animated: Bool = true) {
+        navigationController?.pushViewController(to.controller(), animated: animated)
     }
 }
