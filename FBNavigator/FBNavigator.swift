@@ -13,5 +13,5 @@ import UIKit
 public protocol FBNavigator {
     associatedtype Destination
     
-    func navigate(to: Destination)
+    func navigate(to: Destination, animated: Bool)
 }
